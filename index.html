@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Absen Digital Bulanan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>📋 Absen Digital Bulanan</h2>
+
+<div class="filter">
+  Bulan:
+  <select id="bulan"></select>
+  Tahun:
+  <select id="tahun"></select>
+  <button onclick="loadAbsen()">📅 Tampilkan</button>
+</div>
+
+<table id="absenTable">
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Nama</th>
+      <th>H</th>
+      <th>I</th>
+      <th>S</th>
+      <th>A</th>
+    </tr>
+  </thead>
+  <tbody id="absen"></tbody>
+</table>
+
+<h3>📊 Rekap Bulanan</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Nama</th>
+      <th>Hadir</th>
+      <th>Izin</th>
+      <th>Sakit</th>
+      <th>Alpha</th>
+    </tr>
+  </thead>
+  <tbody id="rekap"></tbody>
+</table>
+
+<button onclick="exportCSV()">⬇️ Export Rekap Excel</button>
+
+<script src="script.js"></script>
+</body>
+</html>
